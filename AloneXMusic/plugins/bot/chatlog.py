@@ -1,8 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
+from config import LOGGER_ID
 from AloneXMusic import app
-
-ALONE_LOG_ID = "-1001829172962"
 
 async def new_message(chat_id: int, message: str):
     await app.send_message(chat_id=chat_id, text=message)
@@ -15,7 +14,7 @@ async def on_new_chat_members(_, message: Message):
         username = f"@{message.chat.username}" if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐂ʜᴀᴛ"
         chat_id = message.chat.id
         new = f"✫ <b><u>#𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ</u></b> ✫\n\n𝐂ʜᴀᴛ 𝐈ᴅ : {chat_id}\n𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ : {username}\n𝐂ʜᴀᴛ 𝐓ɪᴛʟᴇ : {title}\n\n𝐀ᴅᴅᴇᴅ 𝐁ʏ : {added_by}\n\n𝐁ᴏᴛ : {app.mention} "
-        await new_message(ALONE_LOG_ID, new)
+        await new_message(LOGGER_ID, new)
 
 @app.on_message(filters.left_chat_member)
 async def on_left_chat_member(_, message: Message):
@@ -24,4 +23,4 @@ async def on_left_chat_member(_, message: Message):
         title = message.chat.title
         chat_id = message.chat.id
         left = f"✫ <b><u>#𝐋ᴇғᴛ_𝐆ʀᴏᴜᴘ</u></b> ✫\n\n𝐂ʜᴀᴛ 𝐈ᴅ : {chat_id}\n𝐂ʜᴀᴛ 𝐓ɪᴛʟᴇ : {title}\n\n𝐑ᴇᴍᴏᴠᴇᴅ 𝐁ʏ : {remove_by}\n\n𝐁ᴏᴛ : {app.mention} "
-        await new_message(ALONE_LOG_ID, left)
+        await new_message(LOGGER_ID, left)
