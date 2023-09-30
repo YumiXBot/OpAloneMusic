@@ -1,6 +1,5 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from config import ALONE_LOG_ID
 from AloneXMusic import app
 
 ALONE_LOG_ID = "-1001829172962"
