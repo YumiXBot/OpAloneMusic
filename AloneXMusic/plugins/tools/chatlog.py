@@ -63,6 +63,7 @@ async def _greet(_, message):
                 f"🌷{message.from_user.mention}𝐖ᴇʟᴄᴏᴍᴇ 𝐈ɴ ᴀ 𝐍ᴇᴡ 𝐆ʀᴏᴜᴘ🥳\n\n"
                 f"📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ: {message.chat.title}\n"
                 f"🔐𝐂ʜᴀᴛ 𝐔.𝐍: @{message.chat.username}\n"
+                f"❤️‍🔥𝐔ʀ 𝐍ᴀᴍᴇ: {message.from_user.mention}\n"
                 f"💖𝐔ʀ 𝐈d: {member.id}\n"
                 f"✍️𝐔ʀ 𝐔.𝐍aмe: @{member.username}\n"
                 f"👥𝐂ᴏᴍᴘʟᴇᴛᴇᴅ {count} 𝐌ᴇᴍʙᴇʀ𝐬🎉"
