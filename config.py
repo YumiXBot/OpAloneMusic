@@ -11,7 +11,7 @@ API_ID = int(getenv("API_ID", "14281524"))
 API_HASH = getenv("API_HASH", "1a2e3f00651f595c53c36140abc5d0c9")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "6165196235:AAHtQ54yTfdmk-_P6ZLxL6oTzTW8GTObzj8")
+BOT_TOKEN = getenv("BOT_TOKEN", "5617741553:AAGVac7GivdyouRcw4YMKzgH6a8hRaH5XVk")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://hny:zara@cluster0.lfe5o.mongodb.net/?retryWrites=true&w=majority")
@@ -32,7 +32,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamDilwar/FourXBot",
+    "https://github.com/TeamDilwar/FiveXBot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -62,7 +62,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQG7300ACNYsQ20fCFYFc0upiWDutKUJN0C74r26Hp3S4H0jCqL2ucPpy9GuJ0ngtN3fMJjwUujKKn3O3y1Hg8jZBcvSJPWbOfauJeTzPdZoRwrMRwtuY9kYU9g7Pu6_1kTvqR06T1CQDGQX9Vnois58SJmPPuXc8rt5PhK72CqHPUuhU3YLvMIDvlzb_JcjKPAY1JVhiO_HXxbt3qlbMyg_M1LgUHTdpNZ8ugzT3H6_m0z2UONWTRCsBa9zyBM2d1d_g-oM2UlviUi5xj8fXB3zFY_5o3_RmhmOtnaOptuT3UuwUpCbMLAMIHN52ui96Z3dloijKslA2zwtxiN8B1knKdCIXQAAAAFvHw8EAA")
+STRING1 = getenv("STRING_SESSION", "BQDOJPAAYzfQfcSDG-E-5ydxwjtxG_FNWOwGixyqDOP1VUOYrjANqFYH7KkFMqm3dcL28OMhNEynNzzGJRIzHkBU2Q1ZcGvRsCiyGi20u6RUwQBHjfSSwzlCsr1BWSIaxO3XuU4bDrDp8VBsWzl-dYDG74j-BbRu1dFC0upohCKlMRceJNWTJk4Hem3cE5d4w8vebchJySVO5-ryKZ7XIky7zU0HJDr6xFGQu6eMEYQxeq-Og9tiXAlCU3-wyzZ9Gs_hg9SsNalPQ-T4PTjtqgaVcyVBADPpV6zJUPZfEH6WDa2cecN3zlSURWXAYwsPqJqSBCF6GjIrz7tdz6CYa2ygiF9WTQAAAABt2EiVAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
